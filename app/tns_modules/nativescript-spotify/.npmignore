@@ -1,0 +1,10 @@
+demo
+docs
+resources
+*.png
+*.jpg
+*.log
+screenshots
+CONTRIBUTING.md
+*.ts
+!*.d.ts

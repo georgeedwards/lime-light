@@ -1,0 +1,121 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-spotify",
+        "scope": null,
+        "escapedName": "nativescript-spotify",
+        "name": "nativescript-spotify",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/williamlench/Documents/code/test"
+    ]
+  ],
+  "_from": "nativescript-spotify@latest",
+  "_id": "nativescript-spotify@1.6.1",
+  "_inCache": true,
+  "_location": "/nativescript-spotify",
+  "_nodeVersion": "5.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/nativescript-spotify-1.6.1.tgz_1475378268007_0.5470994398929179"
+  },
+  "_npmUser": {
+    "name": "walkerrunpdx",
+    "email": "walkerrunpdx@gmail.com"
+  },
+  "_npmVersion": "3.5.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-spotify",
+    "scope": null,
+    "escapedName": "nativescript-spotify",
+    "name": "nativescript-spotify",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-spotify/-/nativescript-spotify-1.6.1.tgz",
+  "_shasum": "080f61de9322c41c6d5425097d34dde5ac7fae1c",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-spotify",
+  "_where": "/Users/williamlench/Documents/code/test",
+  "author": {
+    "name": "Nathan Walker",
+    "email": "walkerrunpdx@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/NathanWalker/nativescript-spotify/issues"
+  },
+  "contributors": [
+    {
+      "name": "Nathanael Anderson",
+      "email": "nathan@master-technology.com",
+      "url": "https://github.com/NathanaelA"
+    },
+    {
+      "name": "Brad Martin",
+      "email": "bradwaynemartin@gmail.com",
+      "url": "https://github.com/bradmartin"
+    }
+  ],
+  "dependencies": {},
+  "description": "Spotify for your NativeScript app.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "080f61de9322c41c6d5425097d34dde5ac7fae1c",
+    "tarball": "https://registry.npmjs.org/nativescript-spotify/-/nativescript-spotify-1.6.1.tgz"
+  },
+  "gitHead": "cba9463a4ea5784562a6dd55be4970304101ca36",
+  "homepage": "https://github.com/NathanWalker/nativescript-spotify",
+  "keywords": [
+    "NativeScript",
+    "Spotify",
+    "Music",
+    "Audio",
+    "JavaScript",
+    "Android",
+    "iOS"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/NathanWalker/nativescript-spotify/blob/master/LICENSE"
+  },
+  "main": "spotify.js",
+  "maintainers": [
+    {
+      "name": "walkerrunpdx",
+      "email": "walkerrunpdx@gmail.com"
+    }
+  ],
+  "name": "nativescript-spotify",
+  "nativescript": {
+    "platforms": {
+      "ios": "2.3.0",
+      "android": "2.3.0"
+    }
+  },
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanWalker/nativescript-spotify.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf demo/node_modules demo/lib demo/platforms",
+    "demo.android": "npm run preparedemo; cd demo; tns run android",
+    "demo.ios": "npm run preparedemo; cd demo; tns emulate ios",
+    "preparedemo": "npm run build; cd demo; tns plugin remove nativescript-spotify; tns plugin add ..; tns install",
+    "setup": "npm i; cd demo; npm install; cd ..; npm run build; cd demo; tns plugin add ..; cd .."
+  },
+  "typings": "spotify.d.ts",
+  "version": "1.6.1"
+}

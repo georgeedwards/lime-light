@@ -17,27 +17,13 @@
           <Image src="{{currentAlbumUrl}}" class="cover" id="album-art" /> 
           <Image src="~/assets/login-btn.png" tap="{{login}}" visibility="{{loggedIn ? 'collapsed' : 'visible'}}" class="login-btn"/> 
           <Button text="{{playBtnTxt}}" tap="{{togglePlay}}" visibility="{{loggedIn ? 'visible' : 'collapsed'}}" class="play-btn"/>
+          <Button text="Next" tap="{{next}}" visibility="{{loggedIn ? 'visible' : 'collapsed'}}" class="play-btn"/>
          
           <android>
             <Slider minValue="0" maxValue="100" value="{{ volumeValue }}" visibility="{{loggedIn ? 'visible' : 'collapsed'}}" />
             <Button text="GET PLAYER STATE" tap="{{ getPlayerState }}" visibility="{{loggedIn ? 'visible' : 'collapsed'}}" />
           </android>
-
-          <GridLayout columns="*,*" rows="auto" visibility="{{loggedIn ? 'visible' : 'collapsed'}}">
-            <Button id="ns-playlist" row="0" col="0" text="Natively Scripting" tap="{{viewPlaylist}}" class="view-track view-playlist" color="{{playlistNSActive}}"/>
-            <Button id="tr-playlist" row="0" col="1" text="Thoughtram Zone" tap="{{viewThoughtram}}" class="view-track view-playlist" color="{{playlistTRActive}}"/>
-          </GridLayout>
           
-          <ListView id="playlist" items="{{playlistItems}}" itemTap="{{playlistItemTap}}" row="1" separatorColor="#333" backgroundColor="#000" visibility="{{loggedIn ? 'visible' : 'collapsed'}}">
-            <ListView.itemTemplate>
-              <StackLayout backgroundColor="#000">
-                <GridLayout columns="auto, *" rows="auto" class="list-item">
-                  <Button row="0" col="0" text="{{playing ? '&#xf28b;' : '&#xf144;'}}" class="play-btn" />
-                  <Label row="0" col="1" text="{{name}}" textWrap="true" class="title" />
-                </GridLayout>
-              </StackLayout>
-            </ListView.itemTemplate>
-          </ListView>
         </StackLayout>
         <StackLayout row="1" class="black" class="footer-area">
           <HtmlView html="{{footerNote}}" class="footer"/>
