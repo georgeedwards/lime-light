@@ -1,21 +1,121 @@
-﻿/*
-In NativeScript, the app.css file is where you place CSS rules that
-you would like to apply to your entire application. Check out
-http://docs.nativescript.org/ui/styling for a full list of the CSS
-selectors and properties you can use to style UI components.
+﻿@import 'nativescript-theme-core/css/core.light.css';
 
-/*
-In many cases you may want to use the NativeScript core theme instead
-of writing your own CSS rules. For a full list of class names in the theme
-refer to http://docs.nativescript.org/ui/theme. 
-The imported CSS rules must precede all other types of rules.
-*/
-@import 'nativescript-theme-core/css/core.light.css';
+button {
+    font-family: 'Roboto', Roboto;
+    color:#fff;
+    margin:10;
+    font-size:20;
+}
 
-/*
-The following CSS rule changes the font size of all UI
-components that have the btn class name.
-*/
-.btn {
-    font-size: 18;
+Image {
+  horizontal-align:center;
+  margin:0;
+}
+
+.action-item {
+  font-family: FontAwesome;
+  font-size: 30;
+  color:#fff;
+}
+.search-bar {
+  background-color:white;
+}
+
+.login-btn {
+  margin:20 0 20 0;
+  width:75%;
+}
+
+.view-track {
+  color:#fff;
+}
+
+.view-playlist {
+  font-size:13;
+}
+
+.view-playlist.active {
+  color:yellow;
+}
+
+.cover {
+  height:300;
+}
+
+.black {
+  background-color:#000;
+}
+
+.align-center {
+    vertical-align: center;
+    horizontal-align: center;
+}
+
+.footer-area {
+  vertical-align: bottom;
+}
+
+.footer {
+  background-color:#000;
+  color:#A6CE40;
+}
+
+.metadata,
+.account-info {
+  left: 30;
+  opacity:0;
+  width:95%;
+  background-color:#000;
+  border-radius:10;
+  padding:30 10 10 10;
+}
+
+.track-info {
+  padding:5;
+  horizontal-align: left;
+  color:#fff;
+  font-size:16;
+}
+
+.play-btn {
+  font-family: FontAwesome;
+  font-size: 50;
+  color:#fff;
+  margin:4;
+}
+
+.show-track-btn {
+  font-family: FontAwesome;
+  font-size: 25;
+  color:#fff;
+}
+
+.show-account-btn {
+  font-family: FontAwesome;
+  font-size: 25;
+  color:#fff;
+}
+
+.top-controls {
+  top:20;
+  width:100%;
+  padding:0 10 0 10;
+  height:50;
+}
+
+.list-item {
+  margin-bottom: 1;
+  padding:4;
+  background-color:#000;
+}
+
+.play-btn {
+  font-family: FontAwesome;
+  font-size: 30;
+  color:#fff;
+}
+
+.title {
+  color:#fff;
+  font-size:18;
 }
